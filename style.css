@@ -1,0 +1,29 @@
+html{
+    background-color: rgb(249, 252, 214);
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+header{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(143, 195, 240);
+    background-color: rgb(250, 192, 253);
+    margin-top: 0px;
+    border: 0px;
+    padding: 0px;
+
+}
+
+h1{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+body{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
