@@ -8,27 +8,33 @@ console.log(inputFlav);
 
 // A loop is used to iterate through the array of flavors.
 
-for(let i=0;i<inputFlav.length;i++){
-  console.log(inputFlav[i])}
 
 
 alert (`These are there flavors you entered: ${inputFlav}`);
 
 // An object is used to keep count of how many orders there are of each flavor.
+
+
+function addObjectProperty (order){
 const cusFlav = {};
-
-const addObjectProperty = (obj, key, val) => {
-    
-    obj[key] = val
-    return obj
-  }
-
-  addObjectProperty(cusFlav, "Flavor", inputFlav)
   
-  console.table(cusFlav)
+for (let i = 0; i < order.length; i++){
+
+  console.log(order[i]);
+
+  if (cusFlav[order[i]]){
+    cusFlav[order[i]] = cusFlav[order[i]] + 1
+  } else {
+    cusFlav[order[i]] = 1
+  }
+ 
+} 
+return cusFlav
+}
+
+  console.table(addObjectProperty(inputFlav));
 
 
 // The program correctly counts the number of each flavor in the user's input.
 
   alert (`This is how many orders was placed: ${inputFlav.length}`);
-
